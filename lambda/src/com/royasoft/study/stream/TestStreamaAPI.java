@@ -1,4 +1,4 @@
-package com.royasoft;
+package com.royasoft.study.stream;
 
 import java.util.ArrayList;
 import java.util.Arrays;

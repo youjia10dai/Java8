@@ -1,4 +1,4 @@
-package com.royasoft.practise.practise2.entity;
+package com.royasoft.practise.stream操作.entity;
 //交易员类
 public class Trader {
 

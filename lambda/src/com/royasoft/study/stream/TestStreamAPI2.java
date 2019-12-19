@@ -1,4 +1,4 @@
-package com.royasoft;
+package com.royasoft.study.stream;
 
 import com.royasoft.entity.Employee;
 import com.royasoft.entity.Employee.Status;

@@ -1,4 +1,4 @@
-package com.royasoft;
+package com.royasoft.study.lambda;
 
 import org.junit.jupiter.api.Test;
 

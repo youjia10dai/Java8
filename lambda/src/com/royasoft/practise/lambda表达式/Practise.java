@@ -1,4 +1,4 @@
-package com.royasoft.practise.practise1;
+package com.royasoft.practise.lambda表达式;
 
 import com.royasoft.entity.Employee;
 import org.junit.jupiter.api.Test;

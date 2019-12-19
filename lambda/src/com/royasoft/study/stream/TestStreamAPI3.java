@@ -1,4 +1,4 @@
-package com.royasoft;
+package com.royasoft.study.stream;
 
 import java.util.Arrays;
 import java.util.DoubleSummaryStatistics;
@@ -123,7 +123,7 @@ public class TestStreamAPI3 {
 		
 		DoubleSummaryStatistics dss = emps.stream()
 			.collect(Collectors.summarizingDouble(Employee::getSalary));
-		
+
 		System.out.println(dss.getMax());
 	}
 	
