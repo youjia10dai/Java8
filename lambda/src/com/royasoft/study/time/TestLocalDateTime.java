@@ -30,6 +30,7 @@ public class TestLocalDateTime {
 	
 	@Test
 	public void test6(){
+		// 获取所有的时区
 		Set<String> set = ZoneId.getAvailableZoneIds();
 		set.forEach(System.out::println);
 	}
