@@ -62,7 +62,7 @@ public class TestLambda2 {
 
     @Test
     public void test2(){
-        Consumer<String> con = x -> System.out.println(x);
+        Consumer<String> con = System.out::println;
         con.accept("我大尚硅谷威武！");
     }
 
@@ -76,7 +76,8 @@ public class TestLambda2 {
 
     @Test
     public void test4(){
-        Comparator<Integer> com = (x, y) -> Integer.compare(x, y);
+        Comparator<Integer> com = Integer::compare;
+//        Comparator<Integer> com = (x, y) -> Integer.compare(x, y); 这个代码可以转化成上面两种形式
     }
 
     @Test

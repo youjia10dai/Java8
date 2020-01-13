@@ -65,7 +65,7 @@ public class TestStreamAPI3 {
 		System.out.println(sum.get());
 	}
 	
-	//collect——将流转换为其他形式。接收一个 Collector接口的实现，用于给Stream中元素做汇总的方法
+	/* collect——将流转换为其他形式。接收一个 Collector接口的实现，用于给Stream中元素做汇总的方法 */
 	@Test
 	public void test3(){
 		List<String> list = emps.stream()
@@ -92,6 +92,7 @@ public class TestStreamAPI3 {
 	}
 	
 	@Test
+	/* 获取最大值,最小值,     进行统计 */
 	public void test4(){
 		Optional<Double> max = emps.stream()
 			.map(Employee::getSalary)
@@ -161,7 +162,7 @@ public class TestStreamAPI3 {
 		System.out.println(map);
 	}
 	
-	//
+	// 字符串连接
 	@Test
 	public void test8(){
 		String str = emps.stream()

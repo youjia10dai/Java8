@@ -28,7 +28,7 @@ public class TestLambda {
         TreeSet<Integer> ts = new TreeSet<Integer>(com);
     }
 
-    //Lambda 表达式
+    // 1.Lambda 表达式 简化匿名内部类的语法(功能1)
     public void test2() {
         Comparator<Integer> com = (x, y) -> Integer.compare(x, y);
     }
@@ -66,7 +66,7 @@ public class TestLambda {
         return list;
     }
 
-    //优化方式一：策略设计模式
+    //优化方式一：策略设计模式(功能2)
     public List<Employee> filterEmployee(List<Employee> emps, MyPredicate<Employee> mp) {
         List<Employee> list = new ArrayList<>();
 

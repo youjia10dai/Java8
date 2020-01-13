@@ -69,7 +69,7 @@ public class TestStreamAPI2 {
 		System.out.println(op.get());
 		
 		System.out.println("--------------------------------");
-		
+		// 并行流会随机返回一个
 		Optional<Employee> op2 = emps.parallelStream()
 			.filter((e) -> e.getStatus().equals(Status.FREE))
 			.findAny();
@@ -104,7 +104,7 @@ public class TestStreamAPI2 {
 		 .filter((e) -> e.getStatus().equals(Status.FREE));
 		
 		long count = stream.count();
-		
+		// 这里会报错
 		stream.map(Employee::getSalary)
 			.max(Double::compare);
 	}
