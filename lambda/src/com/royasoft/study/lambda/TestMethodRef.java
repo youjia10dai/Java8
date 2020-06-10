@@ -50,8 +50,10 @@ public class TestMethodRef {
     //构造器引用
     @Test
     public void test7() {
+        // 使用fun创建对象
         Function<String, Employee> fun = Employee::new;
-
+        Employee apply = fun.apply("11");
+        System.out.println(apply);
         BiFunction<String, Integer, Employee> fun2 = Employee::new;
     }
 
