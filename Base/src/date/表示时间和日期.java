@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
  * @CreateTime: 2020-09-14 16:44
  * @Description: 操作和创建时间
  */
-public class DateBase1 {
+public class 表示时间和日期 {
 
     public static void main(String[] args) {
         // 从默认时区的系统时钟获取当前的日期时间。不用考虑时区差

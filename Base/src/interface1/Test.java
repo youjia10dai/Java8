@@ -10,8 +10,8 @@ public class Test {
 
         InterfaceBase.getName2();
 
-        InterfaceBase t = new InterfaceBase(){
-        };
+        // 接口可以直接创建出来,而不需要实现类了(通过匿名类型的形式创建出来,这里的匿名类指的是,没有显示的实现)
+        InterfaceBase t = new InterfaceBase(){};
         t.getName();
     }
 }

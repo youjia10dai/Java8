@@ -7,11 +7,10 @@ import java.time.temporal.TemporalAdjusters;
 
 /**
  * @Author: chenlj
- * @CreateTime: 2020-09-15 16:49
- * @Description: LocalDate 表示日期    LocalTime 表示时间(时分秒)
+ * @CreateTime: 2022-11-30 15:17
+ * @Description: todo
  */
-public class DateBase5 {
-
+public class 表示日期 {
     public static void main(String[] args) {
         //获取当前日期,只含年月日 固定格式 yyyy-MM-dd    2018-05-04
         LocalDate today = LocalDate.now();
@@ -40,16 +39,5 @@ public class DateBase5 {
         // 取2018年10月第一个周三 so easy?：  2018-10-03
         LocalDate thirdMondayOf2018 = LocalDate.parse("2018-10-01").with(TemporalAdjusters.firstInMonth(DayOfWeek.WEDNESDAY));
         System.out.println("thirdMondayOf2018 = " + thirdMondayOf2018);
-
-        //16:25:46.448(纳秒值)
-        LocalTime todayTimeWithMillisTime = LocalTime.now();
-        System.out.println("todayTimeWithMillisTime = " + todayTimeWithMillisTime);
-        //16:28:48 不带纳秒值
-        LocalTime todayTimeWithNoMillisTime = LocalTime.now().withNano(0);
-        System.out.println("todayTimeWithNoMillisTime = " + todayTimeWithNoMillisTime);
-        LocalTime time1 = LocalTime.parse("23:59:59");
-        System.out.println("time1 = " + time1);
-
     }
-
 }

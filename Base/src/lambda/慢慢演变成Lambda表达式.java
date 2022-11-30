@@ -10,7 +10,7 @@ import java.util.List;
  * @CreateTime: 2020-09-11 15:39
  * @Description:
  */
-public class LambdaBase2 {
+public class 慢慢演变成Lambda表达式 {
 
     public static List<Product> products;
 
@@ -22,22 +22,22 @@ public class LambdaBase2 {
 
     public static void main(String[] args) {
         // 使用最原始的
-        System.out.println("过滤颜色" + filterProductByColor(LambdaBase2.products));
-        System.out.println("过滤价格" + filterProductByPrice(LambdaBase2.products));
+        System.out.println("过滤颜色" + filterProductByColor(慢慢演变成Lambda表达式.products));
+        System.out.println("过滤价格" + filterProductByPrice(慢慢演变成Lambda表达式.products));
 
         // 优化1: 使用设计模式.               new ColorPredicate() 相关于是处理对象
-        System.out.println("过滤颜色" + filterProductByPredicate(LambdaBase2.products, new ColorPredicate()));
-        System.out.println("过滤价格" + filterProductByPredicate(LambdaBase2.products, new PricePredicate()));
+        System.out.println("过滤颜色" + filterProductByPredicate(慢慢演变成Lambda表达式.products, new ColorPredicate()));
+        System.out.println("过滤价格" + filterProductByPredicate(慢慢演变成Lambda表达式.products, new PricePredicate()));
 
         // 优化2: 使用匿名内部类的方式
-        filterProductByPredicate(LambdaBase2.products, new MyPredicate<Product>() {
+        filterProductByPredicate(慢慢演变成Lambda表达式.products, new MyPredicate<Product>() {
             @Override
             public boolean test(Product product) {
                 return "红色".equals(product.getColor());
             }
         });
 
-        filterProductByPredicate(LambdaBase2.products, new MyPredicate<Product>() {
+        filterProductByPredicate(慢慢演变成Lambda表达式.products, new MyPredicate<Product>() {
             @Override
             public boolean test(Product product) {
                 return product.getPrice() < 8000;
@@ -45,8 +45,8 @@ public class LambdaBase2 {
         });
 
         // 优化3:  使用lambda表达式
-        System.out.println("过滤颜色" +filterProductByPredicate(LambdaBase2.products, (product) -> "红色".equals(product.getColor())));
-        System.out.println("过滤价格" +filterProductByPredicate(LambdaBase2.products, (product) -> product.getPrice() < 8000));
+        System.out.println("过滤颜色" +filterProductByPredicate(慢慢演变成Lambda表达式.products, (product) -> "红色".equals(product.getColor())));
+        System.out.println("过滤价格" +filterProductByPredicate(慢慢演变成Lambda表达式.products, (product) -> product.getPrice() < 8000));
     }
 
     // 这样一个场景，在商城浏览商品信息时，经常会有条件的进行筛选浏览，例如要选颜色为红色的、价格小于8000千的….

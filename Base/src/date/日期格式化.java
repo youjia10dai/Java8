@@ -8,7 +8,7 @@ import java.time.format.DateTimeFormatter;
  * @CreateTime: 2020-09-15 16:40
  * @Description: 日期格式化
  */
-public class DateBase4 {
+public class 日期格式化 {
 
     public static void main(String[] args) {
         // DateTimeFormatter: 格式化时间/日期

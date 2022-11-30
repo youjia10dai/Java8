@@ -6,7 +6,7 @@ package lambda;
  * @Description: lambda表达式 总结
  * 注：当一个接口中存在多个抽象方法时，如果使用lambda表达式，并不能智能匹配对应的抽象方法，因此引入了函数式接口的概念
  */
-public class LambdaBase3 {
+public class Lambda语法简化 {
 
     /**
      * 无参数无返回值                                  	() -> System.out.println(“Hello WOrld”)

@@ -7,7 +7,7 @@ import java.time.*;
  * @CreateTime: 2020-09-14 16:58
  * @Description:
  */
-public class DateBase2 {
+public class 计算时间差 {
 
     public static void main(String[] args) {
         // Duration:计算两个时间之间的间隔,间隔几秒

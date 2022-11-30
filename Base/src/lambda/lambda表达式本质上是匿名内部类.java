@@ -8,7 +8,7 @@ import java.util.TreeSet;
  * @CreateTime: 2020-09-11 15:15
  * @Description: lambda表达式本质上是一段匿名内部类，也可以是一段可以传递的代码
  */
-public class LambdaBase1 {
+public class lambda表达式本质上是匿名内部类 {
 
     public static void main(String[] args) {
 

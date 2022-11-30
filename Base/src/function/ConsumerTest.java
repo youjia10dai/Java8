@@ -8,11 +8,9 @@ import java.util.function.Consumer;
  * @Description: Consumer接口测试
  */
 public class ConsumerTest {
-
     public static void main(String[] args) {
         testAndThen();
     }
-
     /**
      * 测试Consumer中的andThen方法
      * 调用链
@@ -22,15 +20,12 @@ public class ConsumerTest {
         Consumer<String> firstConsumer = (x) -> {
             System.out.println(x + "1");
         };
-
         Consumer<String> secondConsumer = (x) -> {
             System.out.println(x + "2");
         };
-
         Consumer<String> threeConsumer = (x) -> {
             System.out.println(x + "3");
         };
-
         Consumer<String> stringConsumer = firstConsumer.andThen(secondConsumer).andThen(threeConsumer);
         // 效果:依次执行firstConsumer,secondConsumer,threeConsumer的accept方法
         // 原理解析:每次调用一次andThen就会返回一个新的实现对象
@@ -40,5 +35,4 @@ public class ConsumerTest {
         // 调用
         stringConsumer.accept("111");
     }
-
 }
