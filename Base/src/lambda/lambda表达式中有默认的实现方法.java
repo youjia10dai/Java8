@@ -10,7 +10,7 @@ import java.util.List;
  * @CreateTime: 2020-09-11 16:34
  * @Description: 特殊函数表达式演示(函数式接口有默认的实现方法)
  */
-public class lambda表达式有默认的实现方法 {
+public class lambda表达式中有默认的实现方法 {
 
     public static List<Product> products;
 

@@ -9,7 +9,7 @@ import java.util.function.Function;
  * @Description: 数组引用
  * 格式：Type[]::new
  */
-public class MethodBase3 {
+public class 数组引用 {
 
     public static void main(String[] args) {
         // 数组引用

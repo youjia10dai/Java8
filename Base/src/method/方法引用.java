@@ -1,5 +1,9 @@
 package method;
 
+import test.Item;
+
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
 
@@ -12,7 +16,7 @@ import java.util.function.Consumer;
  *    2. 类::静态方法名
  *    3. 类::实例方法名
  */
-public class MethodBase1 {
+public class 方法引用 {
 
     /**
      *注意：(满足下面条件)

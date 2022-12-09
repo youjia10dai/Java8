@@ -18,4 +18,8 @@ public class Student {
 
     public Student(String aa, int i) {
     }
+
+    public Student(int age) {
+        this.age = age;
+    }
 }

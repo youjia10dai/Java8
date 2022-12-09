@@ -7,11 +7,26 @@ package test;
  */
 public class Item {
     private int i;
-    public Item(int i, String 小牙刷, double v) {
+    private String name;
+
+    private double money;
+
+    public Item(int i, String name, double money) {
         this.i = i;
+        this.name = name;
+        this.money = money;
     }
 
     public int getId() {
         return i;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "i=" + i +
+                ", name='" + name + '\'' +
+                ", money=" + money +
+                '}';
     }
 }
