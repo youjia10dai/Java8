@@ -22,7 +22,6 @@ public class 获取特定的时间 {
         // 获取一个月中的第一天
         LocalDateTime ldt3 = ldt1.withDayOfMonth(1);
         System.out.println(ldt3);
-
         // 获取下一周第一天
         LocalDateTime ldt4 = ldt1.with(TemporalAdjusters.next(DayOfWeek.FRIDAY));
         System.out.println(ldt4);
