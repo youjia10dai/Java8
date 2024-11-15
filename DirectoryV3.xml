@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trees>
+    <tree path="/Base/src/date" title="演示新的日期对象"/>
+    <tree path="/Base/src/interface1" title="接口默认实现和静态方法"/>
+    <tree path="/Base/src/function" title="函数式接口"/>
+    <tree path="/Base/src/method" title="方法引用"/>
+    <tree path="/Base/src/stream" title="流式操作"/>
+    <tree path="/Base/src/stream/StreamBase1.java" title="创建stream" extension="java"/>
+    <tree path="/Base/src/stream/StreamBase2.java" title="中间操作:筛选与切片" extension="java"/>
+    <tree path="/Base/src/stream/StreamBase3.java" title="中间操作:映射" extension="java"/>
+    <tree path="/Base/src/stream/StreamBase4.java" title="中间操作:排序" extension="java"/>
+    <tree path="/Base/src/stream/StreamBase5.java" title="终止操作:match" extension="java"/>
+    <tree path="/Base/src/stream/StreamBase6.java" title="终止操作:find" extension="java"/>
+    <tree path="/Base/src/stream/StreamBase7.java" title="终止操作:计算" extension="java"/>
+    <tree path="/Base/src/stream/StreamBase8.java" title="终止操作:归约" extension="java"/>
+</trees>

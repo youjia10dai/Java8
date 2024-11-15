@@ -31,37 +31,26 @@ public class StreamBase3 {
         products.stream()
                 .map((e) -> e.getColor())
                 .forEach(System.out::println);
-
         System.out.println("-------------------------------------------");
-
         List<String> strList = Arrays.asList("aaa", "bbb", "ccc", "ddd", "eee");
-
         // 若Lambda表达式的参数列表的第一个参数，是实例方法的调用者，第二个参数(或无参)是实例方法的参数时，就可以使用这种方法：
         Stream<String> stream = strList.stream()
                 //string -> string.toUpperCase()  可以简写成 String::toUpperCase  string,没有第二个参数
                 .map(string->string.toUpperCase());
-
         stream.forEach(System.out::println);
-
         System.out.println("---------------------------------------------");
-
         // 将元素转换成stream
         Stream<Stream<Character>> stream2 = strList.stream()
                 .map(StreamBase3::filterCharacter);
-
         stream2.forEach((sm) -> {
             sm.forEach(System.out::println);
         });
-
         System.out.println("---------------------------------------------");
-
         // 将元素转换成流,最后将所有的流转化成一个流
         Stream<Character> stream3 = strList.stream()
                 .flatMap(StreamBase3::filterCharacter);
-
         stream3.forEach(System.out::println);
     }
-
     public static Stream<Character> filterCharacter(String str) {
         List<Character> list = new ArrayList<>();
         for (Character ch : str.toCharArray()) {

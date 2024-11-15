@@ -4,6 +4,7 @@ import test.Item;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
 
@@ -42,8 +43,10 @@ public class 方法引用 {
         BiFunction<String, String, Boolean> fun1 = (str1, str2) -> str1.equals(str2);
 
         BiFunction<String, String, Boolean> fun2 = String::equals;
-        Boolean result2 = fun2.apply("hello", "world");
+        Boolean result2 = fun2.apply("1", "world");
         System.out.println(result2);
+
+        BiFunction<List, String, Boolean> fun3 = List<String>::contains;
     }
 
 }

@@ -30,15 +30,11 @@ public class StreamBase5 {
         boolean bl = products.stream()
                 .allMatch((e) -> e.getColor().equals("红色"));
         System.out.println(bl);
-
         boolean bl1 = products.stream()
                 .anyMatch((e) -> e.getColor().equals("红色"));
-
         System.out.println(bl1);
-
         boolean bl2 = products.stream()
                 .noneMatch((e) -> e.getColor().equals("红色"));
         System.out.println(bl2);
-
     }
 }

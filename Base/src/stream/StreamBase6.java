@@ -30,15 +30,12 @@ public class StreamBase6 {
         Optional<Product> op = products.stream()
                 .sorted((e1, e2) -> Double.compare(e1.getPrice(), e2.getPrice()))
                 .findFirst();
-
         System.out.println(op.get());
-
         System.out.println("--------------------------------");
         // 并行流会随机返回一个(先要返回一个并行流)
         Optional<Product> op2 = products.parallelStream()
                 .filter((e) -> e.getColor().equals("红色"))
                 .findAny();
-
         System.out.println(op2.get());
     }
 

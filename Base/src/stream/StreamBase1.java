@@ -48,5 +48,4 @@ public class StreamBase1 {
         System.out.println("generate开始");
         generate.forEach(System.out::println);
     }
-
 }

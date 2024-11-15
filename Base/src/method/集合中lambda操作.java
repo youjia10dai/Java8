@@ -2,10 +2,7 @@ package method;
 
 import test.Item;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @Author: chenlj
@@ -20,13 +17,9 @@ public class 集合中lambda操作 {
     }
 
     public static void 遍历集合(){
-        ArrayList<Integer> list = new ArrayList<>();
-
-        Collections.addAll(list, 1,2,3,4,5);
-
+        List<Integer> list = Arrays.asList(1,2,3,4,5);
         //lambda表达式 方法引用
         list.forEach(System.out::println);
-
         list.forEach(element -> {
             if (element % 2 == 0) {
                 System.out.println(element);
@@ -41,9 +34,7 @@ public class 集合中lambda操作 {
         items.add(new Item(7, "格力空调", 888.88 ));
         items.add(new Item(17, "肥皂", 2.00 ));
         items.add(new Item(9, "冰箱", 4200.00 ));
-
         items.removeIf(ele -> ele.getId() == 7);
-
         //通过 foreach 遍历，查看是否已经删除
         items.forEach(System.out::println);
     }
